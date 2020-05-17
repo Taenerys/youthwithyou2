@@ -2,7 +2,7 @@
 const csv_trainees = 
 [
   [1, "Esther Yu", "Huace Pictures", "t"],
-  [2,"Xin Liu","AMG Asia Music Group","t"],
+  [2,"XIN Liu","AMG Asia Music Group","t"],
   [3,"Yan Yu","Joinhall Media","t"],
   [4,"Shaking","JNERA","t"],
   [5,"Xiaotang Zhao","Mountaintop Entertainment","t"],
@@ -390,31 +390,31 @@ function removeRankedTrainee(trainee) {
   return false;
 }
 
-// const currentURL = "https://produce48.github.io/";
-// // Serializes the ranking into a string and appends that to the current URL
-// function generateShareLink() {
-//   let shareCode = ranking.map(function (trainee) {
-//     let twoCharID = ("0" + trainee.id).slice(-2); // adds a zero to front of digit if necessary e.g 1 --> 01
-//     return twoCharID;
-//   }).join("");
-//   console.log(shareCode);
-//   shareCode = btoa(shareCode);
-//   shareURL = currentURL + "?r=" + shareCode;
-//   showShareLink(shareURL);
-// }
+const currentURL = "http://apham.me/youthwithyou2/";
+// Serializes the ranking into a string and appends that to the current URL
+function generateShareLink() {
+  let shareCode = ranking.map(function (trainee) {
+    let twoCharID = ("0" + trainee.id).slice(-2); // adds a zero to front of digit if necessary e.g 1 --> 01
+    return twoCharID;
+  }).join("");
+  console.log(shareCode);
+  shareCode = btoa(shareCode);
+  shareURL = currentURL + "?r=" + shareCode;
+  showShareLink(shareURL);
+}
 
-// function showShareLink(shareURL) {
-//   let shareBox = document.getElementById("getlink-textbox");
-//   shareBox.value = shareURL;
-//   document.getElementById("getlink-textbox").style.display = "block";
-//   document.getElementById("copylink-button").style.display = "block";
-// }
+function showShareLink(shareURL) {
+  let shareBox = document.getElementById("getlink-textbox");
+  shareBox.value = shareURL;
+  document.getElementById("getlink-textbox").style.display = "block";
+  document.getElementById("copylink-button").style.display = "block";
+}
 
-// function copyLink() {
-//   let shareBox = document.getElementById("getlink-textbox");
-//   shareBox.select();
-//   document.execCommand("copy");
-// }
+function copyLink() {
+  let shareBox = document.getElementById("getlink-textbox");
+  shareBox.select();
+  document.execCommand("copy");
+}
 
 // holds the list of all trainees
 var trainees = [];
@@ -423,9 +423,7 @@ var filteredTrainees = [];
 // holds the ordered list of rankings that the user selects
 var ranking = newRanking();
 const rowNums = [1, 2, 3, 3];
-//window.addEventListener("load", function () {
 populateRanking();
 readFromCSV();
-//});
 // checks the URL for a ranking and uses it to populate ranking
 getRanking();
