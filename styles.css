@@ -388,3 +388,10 @@ body {
   cursor: -webkit-grab;
   cursor: grab;
 }
+
+footer {
+  text-align: center;
+  color: pink;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 12px;
+}
