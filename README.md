@@ -1,7 +1,8 @@
-# Youth With You 2 ranker
+# Youth With You 2 Ranker
 
 ## Description
-A personal ranker that ranks the trainees from the program Youth With You 2 on iQuyi.
+A personal ranker that ranks the Top 35 trainees from the program Youth With You 2 on iQuyi. Your ranking can be shared via link.
+
 Inspired by [this website](https://produce48.github.io/)!
 
 ### Technolgies used
