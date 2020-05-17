@@ -5,7 +5,7 @@ A personal ranker that ranks the Top 35 trainees from the program Youth With You
 
 Inspired by [this website](https://produce48.github.io/)!
 
-### Technolgies used
+### Technologies used
 HTML, CSS, JavaScript
 
 ## Screenshot
